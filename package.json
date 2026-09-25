@@ -1,0 +1,16 @@
+{
+    "name": "tag-whatsapp-bot",
+    "version": "1.0.0",
+    "description": "TAG WhatsApp Cloud API bot: webhook -> Claude AI -> auto-reply",
+    "main": "index.js",
+    "type": "commonjs",
+    "scripts": {
+          "start": "node index.js"
+    },
+    "engines": {
+          "node": ">=18"
+    },
+    "dependencies": {
+          "express": "^4.19.2"
+    }
+}
