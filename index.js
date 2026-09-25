@@ -7,7 +7,6 @@
 //   WHATSAPP_PHONE_NUMBER_ID - the "Phone number ID" shown in Meta Developers > WhatsApp > API Setup
 //   ANTHROPIC_API_KEY        - API key from console.anthropic.com
 //   APP_SECRET               - (optional) App Secret from Meta app > Settings > Basic, verifies webhook calls
-
 const express = require('express');
 const crypto = require('crypto');
 
@@ -62,7 +61,7 @@ async function askClaude(userText) {
                   'anthropic-version': '2023-06-01',
           },
           body: JSON.stringify({
-                  model: 'claude-3-5-haiku-20241022',
+                  model: 'claude-haiku-4-5-20251001',
                   max_tokens: 400,
                   system: SYSTEM_PROMPT,
                   messages: [{ role: 'user', content: userText }],
